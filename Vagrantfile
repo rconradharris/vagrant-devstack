@@ -1,3 +1,5 @@
+# 1024 doesn't seem to be enough, system becomes non-reponsive and
+# load-average goes very high (35+).
 MEMORY_MB = '2048'
 
 Vagrant.configure("2") do |config|
