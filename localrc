@@ -1,0 +1,15 @@
+DATABASE_PASSWORD=qwerty
+RABBIT_PASSWORD=qwerty
+SERVICE_TOKEN=qwerty
+SERVICE_PASSWORD=qwerty
+ADMIN_PASSWORD=qwerty
+
+# This needed so that Nova will apply a netfilter rule to generate checksums
+# for DHCP packets, since virtio's netdriver isn't doing that. Without this,
+# DHCP in the guest WILL NOT work.
+#
+# https://bugzilla.redhat.com/show_bug.cgi?id=910619#c6
+MULTI_HOST=True
+
+FIXED_RANGE=192.168.1.0/24
+FIXED_NETWORK_SIZE=256
